@@ -17,7 +17,7 @@ namespace RedisAPI.Controllers
 
 
         [HttpGet]
-        public ActionResult<Platform> GetPlatformById()
+        public ActionResult<IEnumerable<Platform>> GetAllPlatforms()
         {
             return Ok(_repo.GetAllPlatforms());
         }
